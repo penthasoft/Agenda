@@ -1,0 +1,28 @@
+<odoo>
+
+    <template id="assets_common" name="common asssets"  inherit_id="web.assets_common">
+        <xpath expr="." position="inside">
+            <link type="text/css"  rel='stylesheet'  href="/business_appointment/static/src/css/business_appointment.css"/>
+            <script type="text/javascript" src="/business_appointment/static/src/js/slots_widget_core.js"/>
+        </xpath>
+    </template>
+
+    <template id="assets_backend" name="backend asssets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <link type="text/css" rel='stylesheet' href="/business_appointment/static/src/css/business_appointment_calendar.css"/>
+            <link type="text/css" rel='stylesheet' href="/business_appointment/static/src/css/kanban_style.css"/>
+            <script type="text/javascript" src="/business_appointment/static/src/js/time_slots.js"/>
+            <script type="text/javascript" src="/business_appointment/static/src/js/resource_many2many.js"/>
+            <script type="text/javascript" src="/business_appointment/static/src/js/business_appointment_formcontroller.js"/>
+            <script type="text/javascript" src="/business_appointment/static/src/js/business_appointment_formview.js"/>
+            <script type="text/javascript" src="/business_appointment/static/src/js/business_appointment_list_controller.js"/>
+            <script type="text/javascript" src="/business_appointment/static/src/js/business_appointment_listview.js"/>
+            <script type="text/javascript" src="/business_appointment/static/src/js/business_appointment_calendarcontroller.js"/>
+            <script type="text/javascript" src="/business_appointment/static/src/js/business_appointment_calendarrenderer.js"/>
+            <script type="text/javascript" src="/business_appointment/static/src/js/business_appointment_calendarmodel.js"/>
+            <script type="text/javascript" src="/business_appointment/static/src/js/business_appointment_calendarview.js"/>
+            <script type="text/javascript" src="/business_appointment/static/src/js/ba_popups.js"/>
+        </xpath>
+    </template>
+
+</odoo>

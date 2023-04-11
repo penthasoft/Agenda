@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+
+    <t t-name="BaPopUpNotification" t-extend="Notification">
+        <t t-jquery=".o_notification_title > t" t-operation="replace"> 
+            <span  t-attf-class="link2event eid_{{widget.eid}}">
+                <t t-esc="widget.title"/>
+            </span>
+        </t>
+        <t t-jquery=".o_notification_content" t-operation="after">
+            <t t-if="widget.resource">
+                <br/> <i>Resource:</i> <t t-raw="widget.resource"/>
+            </t>
+            <t t-if="widget.service">
+                <br/> <i>Service:</i> <t t-raw="widget.service"/>
+            </t>
+            <t t-if="widget.partner">
+                <br/> <i>Contact:</i> <t t-raw="widget.partner"/>
+            </t>
+            <br/><br/>
+            <button type="button" 
+                    class="btn btn-primary link2showed oe_highlight oe_form oe_button"
+            >
+                <span>OK</span>
+            </button>
+            <button type="button" class="btn btn-link link2event">
+                Details
+            </button>
+            <button type="button" class="btn btn-link link2recall">
+                Snooze
+            </button>
+        </t>
+    </t>
+
+</template>
