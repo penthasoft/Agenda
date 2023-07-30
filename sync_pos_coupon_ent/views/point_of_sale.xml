@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="assets" name="sync_pos_coupon_ent assets" inherit_id="point_of_sale.assets">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/sync_pos_coupon_ent/static/src/js/models.js"></script>
+            <script type="text/javascript" src="/sync_pos_coupon_ent/static/src/js/Screens/ProductScreen/ControlButtons/coupon_pos_button.js"></script>
+            <script type="text/javascript" src="/sync_pos_coupon_ent/static/src/js/Screens/ReceiptScreen/ReceiptScreen.js"></script>
+            <script type="text/javascript" src="/sync_pos_coupon_ent/static/src/js/popups.js"></script>
+        </xpath>
+    </template>
+
+</odoo>
