@@ -7,7 +7,7 @@ odoo.define('business_appointment.business_appointment_list_controller', functio
     const { _lt } = require('web.core');
 
     const BusinessAppointmentListController = ListController.extend({
-        buttons_template: 'Ba.ListView.buttons',
+        buttons_template: 'ListView.buttons',
         /**
          * Re-write to launch wizard instead of simple form view
         */
