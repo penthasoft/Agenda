@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--    Form view for gym exercise-->
+    <record id="gpsnotifi_apirest_view_form" model="ir.ui.view">
+        <field name="name">gpsnotifi.apirest.view.form</field>
+        <field name="model">gpsnotifi.apirest</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                            <field name = "name"/>
+                            <field name = "date"/>
+                            <field name = "barcode"/>
+                            <field name = "cedula"/>
+                            <field name = "expediente"/>
+                            <field name = "juzgado"/>
+                            <field name = "latitude"/>
+                            <field name = "longitude"/>
+                            <field name = "image_ced"/>
+                            <field name = "image_casa"/>
+                            <field name = "image_const"/>
+                            <field name = "notificador"/>
+                            <field name = "registra"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="gpsnotifi_apirest_list">
+        <field name="name">gpsnotifi.apirest.tree</field>
+        <field name="model">gpsnotifi.apirest</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name = "name"/>
+                <field name = "date"/>
+                <field name = "barcode"/>
+                <field name = "cedula"/>
+                <field name = "expediente"/>
+                <field name = "juzgado"/>
+                <field name = "latitude"/>
+                <field name = "longitude"/>
+                <field name = "image_ced"/>
+                <field name = "image_casa"/>
+                <field name = "image_const"/>
+                <field name = "notificador"/>
+                <field name = "registra"/>
+            </tree>
+        </field>
+    </record>
+
+    <!--  Action APIREST  -->
+    <record id="gpsnotifi_apirest_action" model="ir.actions.act_window">
+        <field name="name">GPS Notificador</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">gpsnotifi.apirest</field>
+        <field name="view_mode">tree,form,kanban</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Crear Datos!
+            </p>
+        </field>
+    </record>
+    <!--Sub Menu-->
+    <menuitem id="gpsnotifi_apirest_menu_action"
+              name="API-REST"
+              parent="gpsnotifi_menu_root"
+              action="gpsnotifi_apirest_action"
+              sequence="0"/>
+</odoo>
