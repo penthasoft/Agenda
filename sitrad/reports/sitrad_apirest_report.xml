@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <report
+            string="Datos de Notificacion"
+            id="sitrad.action_report_sitrad_apirest"
+            model="sitrad.apirest"
+            report_type="qweb-pdf"
+            name="sitrad.report_sitrad_apirest"
+            file="sitrad.report_sitrad_apirest"
+        />
+    </data>
+</odoo>
