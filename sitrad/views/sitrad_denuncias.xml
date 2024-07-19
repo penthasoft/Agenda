@@ -339,7 +339,9 @@
                         <filter string="Tipo Violencia" name="group_forma" context="{'group_by':'forma_names'}">
                         </filter>
 
-                        <filter string="Fecha Denuncia" name="group_ctrlv_fec_den" domain="[]" context="{'group_by':'ctrlv_fec_den'}" />
+                        <filter string="Fecha Denuncia VCM" name="group_ctrlv_fec_den" domain="[]" context="{'group_by':'ctrlv_fec_den'}" />
+
+                        <filter string="Fecha Den. PNP->PJ" name="group_ctrlv_fec_rempj" domain="[]" context="{'group_by':'ctrlv_fec_rempj'}" />
 
                         <filter string="Fecha Medida" name="group_ctrlpj_fec_rempj" domain="[]" context="{'group_by':'ctrlpj_fec_rempj'}" />
 
